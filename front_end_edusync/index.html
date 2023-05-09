@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduSync Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <header>
+
+            <a href="#" class="logo"><img src="images/newlogo3.gif"><img src="images/newlogo2.jpg"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Welcome! <br>I'm your subtitute Manager <br><span>EDUSYNC</span></h2><br>
+                <p>Effortlessly manage your substitute teacher needs with our user-friendly platform. 
+                    Ensure your students receive the best education possible, 
+                    even when their regular teacher is unavailable. 
+                    Choose our service for hassle-free substitute management.</p><br>
+                     <a href="#">Get Started</a>
+            </div>
+            
+          
+        </div>
+        <div class="imgBox">
+            <img src="images/homeimage2.jpg" class="edusync">
+        </div>
+        <ul class="thumb">
+            <li><img src="images/timeicon.gif" onclick="imgSlider('images/homeimage1.jpg');changeCircleColor('#C9EEFF')"></li>
+            <li><img src="images/ticon.gif" onclick="imgSlider('images/homeimage2.jpg');changeCircleColor('#D2DAFF')"></li>
+            <li><img src="images/calicon.gif" onclick="imgSlider('images/homepage32.jpg');changeCircleColor('#B8E7E1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/instagram_10.png"></a></li>
+            <li><a href="#"><img src="images/facebook10.png"></a></li>
+            <li><a href="#"><img src="images/twitter_10.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.edusync').src=anything;
+
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background =color;
+    
+    
+        const circle2 = document.querySelector('.circle2');
+        circle.style.background=color;
+    }
+    </script>
+</body>
+</html>
