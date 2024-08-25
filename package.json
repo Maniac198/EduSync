@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "This is a fully Functional Login, Register and Logout System Using Node.JS, Express, Passport and More...",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "devStart": "nodemon server.js",
+    "devStart": "node server.js",
     "start": "node server.js"
   },
   "author": "",
